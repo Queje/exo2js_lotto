@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Exercice vérifier les chiffres du lotto</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css" integrity="sha384-nNK9n28pDUDDgIiIqZ/MiyO3F4/9vsMtReZK39klb/MtkZI3/LtjSjlmyVPS3KdN" crossorigin="anonymous">
+	</head>
+	<body>
+		<div>
+			<h1>Aujourd'hui nous allons vérifier les chiffres du lotto !</h1>
+		</div>
+		<div>
+			<form name="form" action="#" onsubmit="checkinfo()">
+				<fieldset>
+					<legend>Remplissez les informations dans le formulaire</legend>
+					<div class="form-group">
+						<label for="firstname">Prénom</label>
+						<input type="text" class="form-control" name="firstname" placeholder="Votre prénom">
+					</div>
+					<div class="form-group">
+						<label for="lastname">Nom</label>
+						<input type="text" class="form-control" name="lastname" placeholder="Votre nom">
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" class="form-control" name="email" placeholder="Votre email">
+						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					</div>
+					<br>
+					<legend>Choisissez vos 6 chiffres (entre 0 et 9)</legend>
+					<br>
+					<div class="form-group">
+						<label for="lottonumbers">Vos nombres:</label>
+						<input type="number" name="lottonumbers1" min="0" max="9">
+						<input type="number" name="lottonumbers2" min="0" max="9">
+						<input type="number" name="lottonumbers3" min="0" max="9">
+						<input type="number" name="lottonumbers4" min="0" max="9">
+						<input type="number" name="lottonumbers5" min="0" max="9">
+						<input type="number" name="lottonumbers6" min="0" max="9">
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</fieldset>
+			</form>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
